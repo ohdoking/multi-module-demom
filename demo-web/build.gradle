@@ -1,0 +1,12 @@
+jar {
+    enabled = true
+}
+bootJar {
+    enabled = false
+}
+
+dependencies {
+    implementation project(':demo-common')
+    implementation project(':demo-api')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}

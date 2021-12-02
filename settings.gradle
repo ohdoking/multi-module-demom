@@ -1,1 +1,3 @@
 rootProject.name = 'multi-demo'
+
+include ':demo-common', ':demo-api', ':demo-web'
