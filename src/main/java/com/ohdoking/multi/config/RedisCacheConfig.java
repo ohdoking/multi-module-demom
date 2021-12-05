@@ -1,4 +1,4 @@
-package com.ohdoking.multidemo.config;
+package com.ohdoking.multi.config;
 
 import org.springframework.boot.autoconfigure.cache.RedisCacheManagerBuilderCustomizer;
 import org.springframework.context.annotation.Bean;

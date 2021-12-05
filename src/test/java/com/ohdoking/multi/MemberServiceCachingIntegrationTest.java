@@ -1,9 +1,9 @@
-package com.ohdoking.multidemo;
+package com.ohdoking.multi;
 
 import com.ohdoking.multi.api.domain.Member;
 import com.ohdoking.multi.api.repository.MemberRepository;
 import com.ohdoking.multi.api.service.MemberService;
-import com.ohdoking.multidemo.config.RedisCacheConfig;
+import com.ohdoking.multi.config.RedisCacheConfig;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

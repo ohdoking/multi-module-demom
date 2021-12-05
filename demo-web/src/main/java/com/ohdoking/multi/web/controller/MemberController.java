@@ -13,11 +13,6 @@ public class MemberController {
     @Autowired
     private MemberService memberService;
 
-    @GetMapping("/hello")
-    public String hello() {
-        return "hello world";
-    }
-
     @GetMapping(value = "/mem_save")
     public void save(Member member) {
         Member mem = new Member();

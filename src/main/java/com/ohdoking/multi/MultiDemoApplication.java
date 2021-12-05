@@ -1,4 +1,4 @@
-package com.ohdoking.multidemo;
+package com.ohdoking.multi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
