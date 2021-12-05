@@ -1,4 +1,4 @@
-package com.ohdoking.multi.web.controller;
+package com.ohdoking.multi.web.controller.file;
 
 import com.ohdoking.multi.api.service.FileStorageService;
 import com.ohdoking.multi.web.dto.UploadFileResponse;
