@@ -6,8 +6,9 @@ import org.springframework.web.context.request.WebRequest;
 
 @RestController("test")
 public class TestController {
+
     @GetMapping("/hello")
-    public String hello(WebRequest swr) {
+    public String hello() {
         return "hello world";
     }
 

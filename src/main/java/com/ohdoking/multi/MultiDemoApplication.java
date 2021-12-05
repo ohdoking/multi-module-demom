@@ -12,8 +12,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan(basePackages = "com.ohdoking.multi.api.domain")
 public class MultiDemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(MultiDemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MultiDemoApplication.class, args);
+    }
 
 }
