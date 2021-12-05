@@ -1,4 +1,4 @@
-package com.ohdoking.multi.api.service;
+package com.ohdoking.multi.api.service.stream;
 
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;

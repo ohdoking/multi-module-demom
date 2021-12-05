@@ -1,4 +1,4 @@
-package com.ohdoking.multi.api.service;
+package com.ohdoking.multi.api.service.file;
 
 import com.ohdoking.multi.api.config.FileStorageProperties;
 import com.ohdoking.multi.api.exception.FileNotFoundException;

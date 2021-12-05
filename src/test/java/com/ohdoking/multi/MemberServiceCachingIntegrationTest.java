@@ -2,7 +2,7 @@ package com.ohdoking.multi;
 
 import com.ohdoking.multi.api.domain.Member;
 import com.ohdoking.multi.api.repository.MemberRepository;
-import com.ohdoking.multi.api.service.MemberService;
+import com.ohdoking.multi.api.service.etc.MemberService;
 import com.ohdoking.multi.config.RedisCacheConfig;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

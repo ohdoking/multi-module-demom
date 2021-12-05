@@ -11,15 +11,15 @@ import javax.servlet.Filter;
 public class WebConfig {
 
     @Bean
-    public Filter filter(){
-        ShallowEtagHeaderFilter filter=new ShallowEtagHeaderFilter();
+    public Filter filter() {
+        ShallowEtagHeaderFilter filter = new ShallowEtagHeaderFilter();
         return filter;
     }
 
     @Bean
     public FilterRegistrationBean<ShallowEtagHeaderFilter> shallowEtagHeaderFilter() {
         FilterRegistrationBean<ShallowEtagHeaderFilter> filterRegistrationBean
-                = new FilterRegistrationBean<>( new ShallowEtagHeaderFilter());
+                = new FilterRegistrationBean<>(new ShallowEtagHeaderFilter());
         filterRegistrationBean.addUrlPatterns("/test/*");
         filterRegistrationBean.setName("etagFilter");
         return filterRegistrationBean;

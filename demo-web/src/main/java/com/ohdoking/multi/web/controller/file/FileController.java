@@ -1,6 +1,6 @@
 package com.ohdoking.multi.web.controller.file;
 
-import com.ohdoking.multi.api.service.FileStorageService;
+import com.ohdoking.multi.api.service.file.FileStorageService;
 import com.ohdoking.multi.web.dto.UploadFileResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import reactor.core.publisher.Mono;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
@@ -53,7 +54,7 @@ public class FileController {
     }
 
     @GetMapping("/download/{fileName:.+}")
-    public ResponseEntity<Resource> downloadFile(@PathVariable String fileName, HttpServletRequest request) {
+    public Mono<ResponseEntity<Resource>> downloadFile(@PathVariable String fileName, HttpServletRequest request) {
         // Load file as Resource
         Resource resource = fileStorageService.loadFileAsResource(fileName);
 
@@ -70,9 +71,9 @@ public class FileController {
             contentType = "application/octet-stream";
         }
 
-        return ResponseEntity.ok()
+        return Mono.just(ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(contentType))
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + resource.getFilename() + "\"")
-                .body(resource);
+                .body(resource));
     }
 }

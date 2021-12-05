@@ -1,4 +1,4 @@
-package com.ohdoking.multi.api.service;
+package com.ohdoking.multi.api.service.etc;
 
 import com.ohdoking.multi.api.domain.Member;
 import com.ohdoking.multi.api.repository.MemberRepository;
